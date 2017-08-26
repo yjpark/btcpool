@@ -189,6 +189,9 @@ bool ClientContainer::addPools(const string &poolName, const string &poolHost,
 bool ClientContainer::makeEmptyGBT(int32_t blockHeight, uint32_t nBits,
                                    const string &blockPrevHash,
                                    uint32_t blockTime, uint32_t blockVersion) {
+  // check if a invalid block
+  
+
   // generate empty GBT
   string gbt;
   gbt += Strings::Format("{\"result\":{");
